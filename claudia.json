@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "broodjeApp-executor",
+    "name": "broodjeApp",
+    "region": "eu-west-1"
+  },
+  "api": {
+    "id": "lq75qh43na"
+  }
+}

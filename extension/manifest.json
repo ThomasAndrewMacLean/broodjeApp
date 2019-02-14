@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "BroodjeApp",
+    "description": "Bestel de broodjes!!!",
+    "icons": {
+        "192": "icon192.png"
+    },
+    "version": "0.1",
+    "author": "Thomas MacLean",
+    "background": {
+        "persistent": false,
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        "js": ["content.js"]
+    }],
+    "browser_action": {
+        "default_title": "Bestel de broodjes!!!"
+    },
+    "permissions": ["http://*/*", "https://*/*"]
+}
