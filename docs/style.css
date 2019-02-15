@@ -38,6 +38,7 @@ div {
     color: black;
     z-index: 1;
     padding: 1rem 0;
+    width: 100vw;
 }
 
 a{
