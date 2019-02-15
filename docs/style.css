@@ -5,6 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height:100vh;
+    margin: 0;
 }
 
 body::after {
@@ -21,7 +22,7 @@ h1{
 }
 p{
     z-index: 1;
-        margin:50px;
+    margin: 0 50px;
 }
 li {
     padding: 0.5rem;
