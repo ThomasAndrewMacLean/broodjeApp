@@ -4,8 +4,26 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height:100vh;
 }
 
+body::after {
+    content: "";
+    background: red;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+}
+h1{
+    z-index: 1
+}
+p{
+    z-index: 1;
+        margin:50px;
+}
 li {
     padding: 0.5rem;
 }
+
