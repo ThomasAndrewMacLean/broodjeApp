@@ -45,3 +45,6 @@ a{
     text-decoration-color: lightgreen;
     text-decoration-style: wavy;
 }
+marquee {
+    font-size: 3rem;
+}
