@@ -25,6 +25,6 @@ app.get('/', (req, res) => {
     res.status(200).json(date);
 });
 
-require('./database')(app);
+require('./src/database')(app);
 
 module.exports = app;

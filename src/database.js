@@ -10,13 +10,28 @@ const broodjes = db.get('broodjes');
 module.exports = function(app) {
     app.post('/addBroodje', (req, res) => {
         try {
+            const { user, date, order, timeStamp } = req.body.broodje;
+
             broodjes
-                .insert(req.body.broodje)
+                .update(
+                    { user, date },
+                    { $set: { order, timeStamp } },
+                    { upsert: true }
+                )
                 .then(r => res.status(200).json(r));
         } catch (error) {
             res.status(500).json(error);
         }
     });
+    // app.post('/addBroodjeOld', (req, res) => {
+    //     try {
+    //         broodjes
+    //             .insert(req.body.broodje)
+    //             .then(r => res.status(200).json(r));
+    //     } catch (error) {
+    //         res.status(500).json(error);
+    //     }
+    // });
     app.get('/getBroodjes', (req, res) => {
         try {
             broodjes.find({}).then(r => {
