@@ -30,4 +30,18 @@ li {
 div > a {
     float: right;
     margin-right: 30%;
+    text-decoration-color: white;
+}
+
+div {
+    background: mediumspringgreen;
+    color: black;
+    z-index: 1;
+    padding: 1rem 0;
+}
+
+a{
+    color: darkslategray;
+    text-decoration-color: lightgreen;
+    text-decoration-style: wavy;
 }
